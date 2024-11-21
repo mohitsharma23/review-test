@@ -1,1 +1,4 @@
 <div>Hello World</div>
+<div *ngIf="todoItem$ | async as todoItem">
+  <span>Title: {{ todoItem.title }}</span>
+</div>
